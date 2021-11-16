@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
 #define pass "S3cr3t"
 
 
-comparing(){
+int comparing(void){
 	char password[144];
 	printf("Informe a senha: ");
 	gets(password);
@@ -16,7 +18,7 @@ comparing(){
 }
 
 
-passok(){
+int passok(void){
 	printf("A senha informada está correta!\n");
 	printf("Obrigado por passar a senha %s!\n",pass);
 	return 0;
